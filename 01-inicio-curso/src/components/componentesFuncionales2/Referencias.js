@@ -22,7 +22,7 @@ export function Referencias(){
   let refMenuBtn = useRef();    //useRef para componentes funcionales.
   //La referencia es como un selector para un elemento del dom pero en react.
 
-  //console.log(refMenu, refMenuBtn);  //veremos que los use ref son un objeto  que tienen una propiedad current, que tiene como valor el nombre de la referencia.
+  console.log(refMenu, refMenuBtn);  //veremos que los use ref son un objeto  que tienen una propiedad current, que tiene como valor el nombre de la referencia.
 
   const handleToogleMenu = (e)=>{
     if(refMenuBtn.current.textConttent === "Menu"){

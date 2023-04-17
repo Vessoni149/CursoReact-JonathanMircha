@@ -29,6 +29,8 @@ export const useFetch = (url)=>{
         setError({err:false});
 
       }catch(err){
+        // Cuando se arroja un objeto con throw, se crea una excepción que es capturada por el primer bloque catch que la atrape. En este caso, la excepción es capturada por el bloque catch dentro de getData, que actualiza los estados de isPending y error con el objeto err que se pasó como argumento.
+        //Es importante destacar que el objeto que se arroja con throw puede tener cualquier nombre, no necesariamente tiene que ser err. En este caso, el nombre err se utiliza como una convención para indicar que este objeto representa un error.
         setIsPending(true);
         setError(err);
         //err será el objeto que retorna el throw

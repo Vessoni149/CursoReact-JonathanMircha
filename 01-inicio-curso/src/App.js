@@ -42,8 +42,8 @@ function App() {
         booleano={true}
         arreglo={[1,2,3]}
         objeto={{nombre:"Jon",correo:"asd@gmail.com"}}
-        elementoReact={<i>esto es un elemento React.</i>}
         funcion={(num) => num*num}
+        elementoReact={<i>esto es un elemento React.</i>}
         componenteReact={<Componente msj="soy un componente pasado como prop"/>}
         />
         <hr></hr>
@@ -57,7 +57,8 @@ function App() {
         <hr></hr>
         <MasSobreEventos></MasSobreEventos>
         <hr></hr>
-        <Padre></Padre>
+        {/* Comunicacion entre componentes */}
+        <Padre></Padre>   
         <hr></hr>
         <CicloVida></CicloVida>
         <hr></hr>

@@ -38,7 +38,7 @@ const handleChecked = (e)=>{
   return(
     <>
     {/*       FORM 1:
-    en este ejercicio lo que hice fue construir un formulario en el que por cada elemento del mismo, tiene un estado, pero si tengo que hacer un formulario grande y mas complejo sería muy engorroso crear una variable e estado por cada elemento del form. Más abajo se hará de otra forma. */}
+    en este ejercicio lo que hice fue construir un formulario en el que por cada elemento del mismo, tiene un estado, pero si tengo que hacer un formulario grande y mas complejo sería muy engorroso crear una variable de estado por cada elemento del form. Más abajo se hará de otra forma. */}
     <h2>Formularios</h2>
 
     <p>PRIMER FORM</p>
@@ -47,7 +47,7 @@ const handleChecked = (e)=>{
       La propiedad "for" en las etiquetas de HTML se utiliza para establecer una asociación entre una etiqueta de "label" y un elemento de formulario (como un campo de entrada "input"). La propiedad "for" se utiliza para especificar el "id" del elemento de formulario al que se hace referencia. Cuando el usuario haga clic en el "label", se activará el campo de entrada "input" correspondiente. */}
       <label htmlFor="nombre">Nombre</label>
 
-      {/* El atributo "name" de los elementos de entrada ("input") en HTML se utiliza para proporcionar un nombre único y significativo para el elemento dentro de un formulario. Este atributo se utiliza para identificar los valores enviados al servidor cuando se envía el formulario.
+      {/* INPUTS: El atributo "name" de los elementos de entrada ("input") en HTML se utiliza para proporcionar un nombre único y significativo para el elemento dentro de un formulario. Este atributo se utiliza para identificar los valores enviados al servidor cuando se envía el formulario.
 
       Cuando se envía un formulario a través de un método HTTP POST, los datos del formulario se envían en el cuerpo de la solicitud y se identifican por sus nombres de entrada ("name") y sus valores correspondientes. Por lo tanto, es importante que cada elemento de entrada tenga un nombre único para que se pueda distinguir entre los distintos campos del formulario y procesarlos correctamente. */}
 
@@ -100,6 +100,8 @@ const handleChecked = (e)=>{
       value="svelte" 
       onChange={(e)=> setSabor(e.target.value)}></input>
       <label htmlFor="svelte">svelte</label>
+
+
 
       <p>Elige tu lenguaje de programacion favorito:</p>
       <select 

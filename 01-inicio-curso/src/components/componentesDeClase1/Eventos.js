@@ -91,7 +91,7 @@ export class MasSobreEventos extends Component{
         <button onClick={(e)=> this.handleClick(e,"pasando parametro desde un evento")}>saludar</button>
 
         {/* evento personalizado:  es crear una prop que se la pasamos al componente y esa prop se la asignamos al evento on click
-        Los atributos de eventos como onCLick son para las etiquetas jsx, no para los componentes. Si queremos sar un evento en un componente tendremos que crear una prop, hacer la funcion que querramos que se ejecute, y luego en el componente Boton sí usar el onClick y asignarle este evento que sera prop.myEvento*/}
+        Los atributos de eventos como onCLick son para las etiquetas jsx, no para los componentes. Si queremos usar un evento en un componente tendremos que crear una prop, hacer la funcion que querramos que se ejecute, y luego en el componente Boton sí usar el onClick y asignarle este evento que sera prop.myEvento*/}
         <h3>Paso de parametros con eventos en componente</h3>
         <Boton myOnClick={(e)=> this.handleClick(e,"pasando parametro desde un evento")}></Boton>
       </div>

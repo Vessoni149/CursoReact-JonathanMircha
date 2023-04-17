@@ -33,6 +33,6 @@ function Hijo(props){
   )
 }
 
-//entre componentes no relacionados directamente, ej de padre a nieto o componestes que no tienen relacion: podemos usar Redux, una libreria externa a react que nos permite manejar un estado gloval; o usar Context, una api interna de react que sirve para lo mismo.
+//entre componentes no relacionados directamente, ej de padre a nieto o componestes que no tienen relacion: podemos usar Redux, una libreria externa a react que nos permite manejar un estado global; o usar Context, una api interna de react que sirve para lo mismo.
 
 //una cuarta opcion seria usar los portales. Permitiría enviar datos entre los componentes del index.js, x ej entre <App> y otro que creemos. No se seule usar en la práctica.
