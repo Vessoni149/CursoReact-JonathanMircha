@@ -2,13 +2,15 @@ import React from 'react'
 import {Modal} from './Modal'
 import { UseModal } from '../hooks/useModal'
 import { ContactForm } from './ContactForm'
+import { ModalPortal } from './ModalPortal'
 export function Modals(props) {
 
   
   //se están invocando las variables que retorna el hook personalizado pero se les cambia el nombre
 const[isOpenModal1,openModal1,closeModal1] = UseModal(false)
 const[isOpenModal2,openModal2,closeModal2] = UseModal(false)
-const[isOpenModalContact,openModalContact,closeModalContact] = UseModal(false)
+const[isOpenModalContact,openModalContact,closeModalContact] = UseModal(false);
+const[isOpenModalPortal,openModalPortal,closeModalPortal] = UseModal(false)
 //Por cada modal vamos a necesitar variables de estado para controlar si estan abiertos o cerrados ya que son todos independientes.
   return (
     <>
@@ -32,6 +34,14 @@ const[isOpenModalContact,openModalContact,closeModalContact] = UseModal(false)
       <Modal isOpen={isOpenModalContact} closeModal={closeModalContact}>
       <ContactForm></ContactForm>
       </Modal>
+
+      {/* Modal con Portal: */}
+      <button onClick={openModalPortal}>Modal en portal</button>
+      <ModalPortal isOpen={isOpenModalPortal} closeModal={closeModalPortal}>
+      <h3>Modal en portal</h3>
+        <p>Este es el contenido de un modal que carga en otro nodo del DOM diferente de donde carga la App gracias a un React Portal</p>
+        <img src='https://placeimg.com/640/480/tec' alt='tecnologia'></img>
+      </ModalPortal>
     </>
   )
 }
