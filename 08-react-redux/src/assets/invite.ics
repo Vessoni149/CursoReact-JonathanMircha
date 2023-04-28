@@ -1,0 +1,88 @@
+BEGIN:VCALENDAR
+METHOD:REQUEST
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Argentina Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T000000
+TZOFFSETFROM:-0300
+TZOFFSETTO:-0300
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Sofia Paredes:mailto:sparedes@minutentag.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=developves
+ s@gmail.com:mailto:developvess@gmail.com
+DESCRIPTION;LANGUAGE=en-US:\n\n\n__________________________________________
+ ______________________________________\nReunión de Microsoft Teams\nÚnas
+ e a través de su ordenador\, aplicación móvil o dispositivo de sala\nHa
+ ga clic aquí para unirse a la reunión<https://teams.microsoft.com/l/meet
+ up-join/19%3ameeting_YjU2YzgwNjctN2M0My00MzljLWExMDItYjFjM2Q0OTkyODYx%40th
+ read.v2/0?context=%7b%22Tid%22%3a%22007fcf3a-3627-463c-980f-bc7d91136ccb%2
+ 2%2c%22Oid%22%3a%22415627e8-2ab4-4951-a4ae-ff5f2afd3a36%22%7d>\nID de la r
+ eunión: 260 061 301 232\nCódigo de acceso: C7KnK5\nDescargar Teams<https
+ ://www.microsoft.com/en-us/microsoft-teams/download-app> | Unirse en la we
+ b<https://www.microsoft.com/microsoft-teams/join-a-meeting>\nInfórmese<ht
+ tps://aka.ms/JoinTeamsMeeting> | Opciones de reunión<https://teams.micros
+ oft.com/meetingOptions/?organizerId=415627e8-2ab4-4951-a4ae-ff5f2afd3a36&t
+ enantId=007fcf3a-3627-463c-980f-bc7d91136ccb&threadId=19_meeting_YjU2YzgwN
+ jctN2M0My00MzljLWExMDItYjFjM2Q0OTkyODYx@thread.v2&messageId=0&language=es-
+ US>\n_____________________________________________________________________
+ ___________\n
+UID:040000008200E00074C5B7101A82E008000000003A615ADDFB78D901000000000000000
+ 0100000004425A4E59B6EF44E84F74CBE30AB208B
+SUMMARY;LANGUAGE=en-US:Entrevista Agustín Vessoni - HR
+DTSTART;TZID=Argentina Standard Time:20230427T090000
+DTEND;TZID=Argentina Standard Time:20230427T093000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20230427T113155Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:Microsoft Teams Meeting
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:2121588282
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-ONLINEMEETINGINFORMATION:{"OnlineMeetingChannelId":null\,"Onlin
+ eMeetingProvider":3}
+X-MICROSOFT-SKYPETEAMSMEETINGURL:https://teams.microsoft.com/l/meetup-join/
+ 19%3ameeting_YjU2YzgwNjctN2M0My00MzljLWExMDItYjFjM2Q0OTkyODYx%40thread.v2/
+ 0?context=%7b%22Tid%22%3a%22007fcf3a-3627-463c-980f-bc7d91136ccb%22%2c%22O
+ id%22%3a%22415627e8-2ab4-4951-a4ae-ff5f2afd3a36%22%7d
+X-MICROSOFT-SCHEDULINGSERVICEUPDATEURL:https://api.scheduler.teams.microsof
+ t.com/teams/007fcf3a-3627-463c-980f-bc7d91136ccb/415627e8-2ab4-4951-a4ae-f
+ f5f2afd3a36/19_meeting_YjU2YzgwNjctN2M0My00MzljLWExMDItYjFjM2Q0OTkyODYx@th
+ read.v2/0
+X-MICROSOFT-SKYPETEAMSPROPERTIES:{"cid":"19:meeting_YjU2YzgwNjctN2M0My00Mzl
+ jLWExMDItYjFjM2Q0OTkyODYx@thread.v2"\,"rid":0\,"mid":0\,"uid":null\,"priva
+ te":true\,"type":0}
+X-MICROSOFT-ONLINEMEETINGCONFLINK:conf:sip:sparedes@minutentag.com\;gruu\;o
+ paque=app:conf:focus:id:teams:2:0!19:meeting_YjU2YzgwNjctN2M0My00MzljLWExM
+ DItYjFjM2Q0OTkyODYx-thread.v2!415627e82ab44951a4aeff5f2afd3a36!007fcf3a362
+ 7463c980fbc7d91136ccb
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONDISPLAYNAME:Microsoft Teams Meeting
+X-MICROSOFT-LOCATIONSOURCE:None
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"Microsoft Teams Meeting"\,"LocationA
+ nnotation":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"
+ LocationState":""\,"LocationCountry":""\,"LocationPostalCode":""\,"Locatio
+ nFullAddress":""}]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR

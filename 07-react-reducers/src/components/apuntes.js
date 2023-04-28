@@ -16,6 +16,7 @@ const initialState = { count: 0, text: "" };
 //Paso 2: Definir la función reducer
 
 // La función reducer es la función que actualiza el estado en respuesta a una acción. La función reducer acepta dos argumentos: el estado actual y la acción, que es un objeto que tiene 2 atributos, 1) el type, tipo de accion a realizar, y 2) un payload que es un valor opcional que va a modificar de alguna manera al estado. El type tiene que estar si o si.
+//LA funcion redurer retorna el estado.
 
 function reducer(state, action) {
   switch (action.type) {
@@ -75,7 +76,7 @@ export const TYPES = {
   REMOVE_ALL_FROM_CART:" REMOVE_ALL_FROM_CART",
   CLEAR_CART:"CLEAR_CART"
 }
-//Empezar por este paso de declarar las opciones hace pensar en la logica de negocio que necesitamos.
+//Empezar por este paso de declarar las opciones hace pensar en la logica de negocio que necesitamos. En buena practia, no obligatorio.
 
 //3° En el archivo xReducer generamos un objeto que seerá el estado inicial y lo exportamos.
 //En este ejemplo com oestado inicial tendremos 2 arrays:
@@ -129,3 +130,6 @@ export function shoppingReducer(state, actions){
   }
 
   //9° desarrollar la logica en la funcion reducer para esa accion en particular.
+
+
+  // La idea es que en las funciones que se ejecutan al realizar un eenvto, click x ej, solo se describa o especifique con el dispatch la accion a realizar, y la lógica de esa accion quede en el archivo reducer.

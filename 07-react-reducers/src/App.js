@@ -1,10 +1,13 @@
 import {Contador} from './components/Contador';
 import { ContadorMejorado } from './components/ContadorMejorado';
 import { ShoppingCart } from './components/ShoppingCart';
+import CrudApi from './components/crud/CrudApi'
 function App() {
   return (
     <div style={{textAlign:"center"}}>
-      <h1>useReducer</h1>
+      <hr></hr>
+      <CrudApi></CrudApi>
+      <hr></hr>
       <ShoppingCart></ShoppingCart>
       <hr></hr>
       <hr></hr>
